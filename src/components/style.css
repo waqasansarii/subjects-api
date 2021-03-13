@@ -1,0 +1,107 @@
+.calender_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+ }
+ .main_div{
+     border: 1px solid gainsboro;
+     border-radius: 5px;
+     margin-top: 10px;
+     width: 500px;
+     margin-left: 10px;
+     padding: 10px;
+     background-color: honeydew;
+     color: rgb(123, 123, 235);
+ }
+ .main_div:hover{
+     background-color: rgb(213, 243, 243);
+     color: black;
+ }
+ .id{
+     font-size: .8em;
+     color: rgb(138, 135, 135);
+ }
+ .main_div>div>p{
+     margin-top: 6px;
+ }
+ .main_div:hover{
+     cursor: pointer;
+ }
+ 
+ .div2{
+     margin-left: 20px;
+ }
+ .main_table_div{
+     box-sizing: border-box;
+     box-shadow: 0px 0px 4px rgb(212, 211, 211);
+     padding: 10px;
+     margin-top: 20px;
+     background-color: honeydew;
+ }
+ .data_div{
+     display: flex;
+ }
+ .cells{
+     margin-left: 10px;
+     width: 420px;
+     padding: 0px 4px;
+}
+.year{
+    color: rgb(96, 96, 219) !important;
+    font-weight: 700;
+}
+.cells>h3{
+    margin-bottom: 10px;
+}
+.cells>p{
+    margin: 0px;
+    margin-bottom: 10px;
+    color: rgb(91, 91, 92);
+    font-weight: 500;
+}
+
+.cells_subject>div>p{
+        
+    border-bottom: 1px solid rgb(91, 91, 92);
+    padding: 10px 0px;
+    margin-top: 5px;
+}
+
+.link{
+    word-wrap: break-word;
+}
+.subject{
+    color: rgb(91, 91, 92);
+    font-weight: 500;
+}
+
+@media screen and (max-width:605px){
+    .main_div{
+        width:auto;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    .calender_container{
+        padding: 30px 15px;
+    }
+    .title{
+        font-size: .9em;
+    }
+    .div2{
+        margin-left: 0px;
+    }
+    .subject,.cells>p{
+        font-size: .9em;
+    }
+    .data_div{
+        flex-direction: column;
+    }
+    .cells{
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .cells_subject{
+        margin-top: 10px;
+    }
+}
